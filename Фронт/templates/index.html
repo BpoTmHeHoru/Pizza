@@ -1,0 +1,232 @@
+{% extends 'base.html'%}
+
+{% block title %}pizza{% endblock %}
+
+{% block main %}
+<div class="container-xxl">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Корзина
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+            <div class="addBasket"></div>
+            <div class="data-cart = 1"></div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Ваш заказ
+            </div>
+            
+            <section data-mobile="false" class="FullPrice">
+                <div class="FullPrice">
+                    Сумма заказа
+                    <span>0 ₽</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">Выполнить заказ</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">PIZZA</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            
+            <li class="nav-item"><a href="/reg" class="nav-link active" aria-current="page">Личный Кабинет</a></li>   
+        </ul>
+    </header>
+</div>
+    <section>
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-8">
+                    <h1>Добро Пожаловать</h1>
+                </div>
+                <div class="col-2">
+                    <img src="..." alt="">
+                </div>
+            </div>
+            <!-- Пицца -->
+    </section>
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col">
+                <section id="1">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.dodopizza.net/static/Img/Products/e9624d2bf1ae41598cd6635c0d3ed0f6_366x366.jpeg" class="card-img-top" alt="Пицца">
+                        <div class="card-body">
+                          <h5 class="card-title">Пицца от Васи</h5>
+                          <p class="card-text">Увеличенная порция моцареллы, томаты, томатный соус.</p>
+                            <footer class="addBasket">
+                                <div class="FullPrice">
+                                    <span class="money ">
+                                        <span class="money__value">500</span>
+                                        <span class="money__currency money__currency_on-the-right"> 
+                                        
+                                         <!-- -->ETH
+                                        </span>
+                                    </span>
+                                </div>
+                                <script>
+                                    function addBaassket(cart_id) {
+                                        fetch('[your.local.host.]/cart/cart_id', 
+                                                    {method: 'POST'}
+                                        )
+                                    }                                                                   
+                                </script>
+                                <sesion data-mobile="false" class="addBaassket">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-mobile="false" class='card'>
+                                        Выбрать
+                                    </button>
+                                </sesion>
+                                
+                                    
+                            </footer>
+                        </div>
+                    </div>          
+                </div>
+                </section>
+                
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/2c7a83e078b44156a7ad774389ed7713_366x366.jpeg" class="card-img-top" alt="Пицца">
+                    <div class="card-body">
+                      <h5 class="card-title">Дебило</h5>
+                      <p class="card-text">Острая чоризо, острый перец халапеньо, соус барбекю.</p>
+                      <footer class="sc-2v0umu-2 bkNUft">
+                        <div class="product-control-price">
+                            <span class="money ">
+                                <span class="money__value">630</span>
+                                <span class="money__currency money__currency_on-the-right"> 
+                                
+                                 <!-- -->ETH
+                                </span>
+                            </span>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Корзина
+                          </button>
+                    </footer>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.dodopizza.net/static/Img/Products/1673ed1b5bea4482aef8a64827207b73_366x366.jpeg" class="card-img-top" alt="Пицца">
+                    <div class="card-body">
+                      <h5 class="card-title">Пицца от Тультаева</h5>
+                      <p class="card-text">Ветчина, картошечка, моцарелла, соус альфредо.</p>
+                      <footer class="sc-2v0umu-2 bkNUft">
+                        <div class="product-control-price"> 
+                            <span class="money ">
+                                <span class="money__value">1000</span>
+                                <span class="money__currency money__currency_on-the-right"> 
+                                
+                                 <!-- -->ETH
+                                </span>
+                            </span>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Корзина
+                          </button>
+                    </footer>
+                    </div>
+                </div>
+           </div>
+       </div>
+    </Section>
+</div>
+ <!-- напитки -->
+</section>
+<div class="container-xxl">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/c99ec0985f37456a8084928dfe8ed379_366x366.jpeg" class="card-img-top" alt="Напиток">
+                <div class="card-body">
+                  <h5 class="card-title"> </h5>
+                  <p class="card-text">Coca-Cola</p>
+                  <footer class="sc-2v0umu-2 bkNUft">
+                    <div class="product-control-price"> 
+                        <span class="money ">
+                            <span class="money__value">250</span>
+                            <span class="money__currency money__currency_on-the-right"> 
+                            
+                             <!-- -->ETH
+                            </span>
+                        </span>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Корзина
+                      </button>
+                </footer>
+                </div>
+              </div>          
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/cbf4fc24b6784abe9b061f44411bebed_366x366.jpeg" class="card-img-top" alt="Напиток">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Sprite</p>
+                  <footer class="sc-2v0umu-2 bkNUft">
+                    <div class="product-control-price"> 
+                        <span class="money ">
+                            <span class="money__value">250</span>
+                            <span class="money__currency money__currency_on-the-right"> 
+                            
+                             <!-- -->ETH
+                            </span>
+                        </span>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Корзина
+                      </button>
+                </footer>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/39ec292094ab4fa2b241acc85d1680c0_366x366.jpeg" class="card-img-top" alt="Пицца">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Fanta</p>
+                  <footer class="sc-2v0umu-2 bkNUft">
+                    <div class="product-control-price"> 
+                        <span class="money ">
+                            <span class="money__value">250</span>
+                            <span class="money__currency money__currency_on-the-right"> 
+                            
+                             <!-- -->ETH
+                            </span>
+                        </span>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Корзина
+                      </button>
+                </footer>
+                </div>
+            </div>
+       </div>
+   </div>
+</Section>
+</div>
+{% endblock %}
